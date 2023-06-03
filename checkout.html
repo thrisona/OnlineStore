@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Clothing Store</title>
+  <style>
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: gainsboro;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 35px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px black;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mens.html">Men's Clothing</a></li>
+        <li><a href="womens.html">Women's Clothing</a></li>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html" class="active">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Checkout</h1>
+
+  <form>
+    <h2>Shipping Information</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <h2>Payment Information</h2>
+    <label for="cardname">Name on Card:</label>
+    <input type="text" id="cardname" name="cardname" required>
+
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" name="cardnumber" required>
+
+    <label for="expdate">Expiration Date:</label>
+    <input type="text" id="expdate" name="expdate" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required>
+
+    <button type="submit">Place Order</button>
+  </form>
+  <footer>
+    <p>&copy; 2023 My Clothing Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
